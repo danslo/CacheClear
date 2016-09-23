@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <type name="Magento\Framework\App\Cache\TypeListInterface">
-        <plugin name="clear_invalidated_cache" type="Danslo\CacheClear\Plugin\ClearCachePlugin" sortOrder="1" disabled="false" />
+        <plugin name="clear_invalid_cache" type="Danslo\CacheClear\Plugin\CacheClearPlugin" sortOrder="1" disabled="false" />
     </type>
 </config>
