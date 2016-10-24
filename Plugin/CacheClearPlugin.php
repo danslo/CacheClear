@@ -2,7 +2,7 @@
 
 namespace Danslo\CacheClear\Plugin;
 
-class CacheClearPlugin 
+class CacheClearPlugin
 {
 
     /**
@@ -15,6 +15,12 @@ class CacheClearPlugin
     public function aroundInvalidate(\Magento\Framework\App\Cache\TypeListInterface $subject, callable $proceed, ...$args)
     {
         $proceed(...$args);
-        $subject->cleanType(...$args);
+        $types = $args[0];
+        if (!is_array($types)) {
+            $types = [$types];
+        }
+        foreach ($types as $type) {
+            $subject->cleanType($type);
+        }
     }
 }
