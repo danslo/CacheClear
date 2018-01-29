@@ -1,16 +1,13 @@
 {
-  "name": "danslo/cacheclear",
-  "description": "Clears the cache when it's invalidated.",
-  "require": {
-    "php": "~5.5.0|~5.6.0|~7.0.5"
-  },
+  "name": "rubic/magento2-module-cache-clear",
+  "description": "Clears Magento 2 cache when it become invalidated.",
   "type": "magento2-module",
   "autoload": {
     "files": [
       "registration.php"
     ],
     "psr-4": {
-      "Danslo\\CacheClear\\": ""
+      "Rubic\\CacheClear\\": ""
     }
   }
 }

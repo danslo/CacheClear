@@ -1,10 +1,9 @@
 <?php
 
-namespace Danslo\CacheClear\Plugin;
+namespace Rubic\CacheClear\Plugin;
 
 class CacheClearPlugin
 {
-
     /**
      * Clears a cache type when it becomes invalid.
      *
